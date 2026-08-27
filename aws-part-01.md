@@ -677,7 +677,7 @@ Elas já se iniciam privadas. É necessário acessar as configurações da sub-r
 
 
 ### Quais os principais componentes de uma VPC e suas definições?
-#### Sub-redes e Endereçamento
+**Sub-redes e Endereçamento**
 
 - CIDR Block: Define a faixa de endereços IP privados da VPC (ex: 10.0.0.0/16).
 
@@ -685,7 +685,7 @@ Elas já se iniciam privadas. É necessário acessar as configurações da sub-r
 
 - Subnet Privada: Sub-rede isolada da internet direta, usada para dados e aplicações internas (ex: Bancos de Dados, APIs).
 
-#### Conectividade e Roteamento
+**Conectividade e Roteamento**
 
 - Route Table (Tabela de Roteamento): Regras de rede que direcionam para onde o tráfego de cada sub-rede deve ir.
 
@@ -695,7 +695,7 @@ Elas já se iniciam privadas. É necessário acessar as configurações da sub-r
 
 - VPC Endpoints: Conexões privadas para acessar serviços da AWS fora da VPC sem passar pela internet pública.
 
-#### Segurança e Controle de Acesso
+**Segurança e Controle de Acesso**
 
 - Security Group: Firewall virtual associado ao recurso (nível de ENI/instância). Controla portas e é stateful (respostas ao tráfego liberado retornam automaticamente).
 
