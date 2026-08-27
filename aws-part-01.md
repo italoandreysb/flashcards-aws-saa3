@@ -675,6 +675,7 @@ Elas já se iniciam privadas. É necessário acessar as configurações da sub-r
 
 ### Como adicioanr uma instância à uma rede privada (se comunicando com outras máquinas da rede)? Como provar que a rede é privada?
 
+- ##############3 faltando resposta #######
 
 ### Quais os principais componentes de uma VPC e suas definições?
 **Sub-redes e Endereçamento**
