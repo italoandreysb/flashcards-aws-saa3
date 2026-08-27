@@ -672,6 +672,31 @@ Elas já se iniciam privadas. É necessário acessar as configurações da sub-r
 
 **Caminho:** VPC/Subnets/\<seleciona\_subrede\>/Ações/Editar config sub-rede
 
----
 
-> **Onde parei:** Assistir aula 97
+### Como adicioanr uma instância à uma rede privada (se comunicando com outras máquinas da rede)? Como provar que a rede é privada?
+
+
+### Quais os principais componentes de uma VPC e suas definições?
+#### Sub-redes e Endereçamento
+
+- CIDR Block: Define a faixa de endereços IP privados da VPC (ex: 10.0.0.0/16).
+
+- Subnet Pública: Sub-rede com rota para a internet, usada para recursos expostos ao público (ex: Web Servers, Load Balancers).
+
+- Subnet Privada: Sub-rede isolada da internet direta, usada para dados e aplicações internas (ex: Bancos de Dados, APIs).
+
+#### Conectividade e Roteamento
+
+- Route Table (Tabela de Roteamento): Regras de rede que direcionam para onde o tráfego de cada sub-rede deve ir.
+
+- Internet Gateway (IGW): Porta de entrada e saída para conexões bidirecionais entre a VPC e a internet.
+
+- NAT Gateway: Permite que recursos da sub-rede privada acessem a internet sem ficarem visíveis a conexões externas.
+
+- VPC Endpoints: Conexões privadas para acessar serviços da AWS fora da VPC sem passar pela internet pública.
+
+#### Segurança e Controle de Acesso
+
+- Security Group: Firewall virtual associado ao recurso (nível de ENI/instância). Controla portas e é stateful (respostas ao tráfego liberado retornam automaticamente).
+
+- Network ACL (NACL): Firewall associado à sub-rede. Funciona como uma camada extra de proteção e é stateless (exige regras explícitas de entrada e saída).
